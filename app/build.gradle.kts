@@ -55,4 +55,16 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    implementation(libs.koin)
+    implementation(libs.koinCore)
+    implementation(libs.okhttp)
+    implementation(libs.retrofit)
+    implementation(libs.kotlin.serialization)
+    implementation(libs.retrofit.serialization)
+    implementation("io.coil-kt:coil-compose:2.4.0")
 }
