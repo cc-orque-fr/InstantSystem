@@ -5,6 +5,9 @@ plugins {
 
 android {
     namespace = "fr.cc.instantsystem"
+    buildFeatures {
+        buildConfig = true
+    }
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -19,6 +22,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "ARTICLES_BASE_URL", "\"https://newsapi.org/v2/everything\"")
+        buildConfigField("String", "TOP_HEADLINES_BASE_URL", "\"https://newsapi.org/v2/top-headlines\"")
+
     }
 
     buildTypes {
