@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
 
                     when(value ){
                         is LatestNewsUiState.LoadingCatgories -> {
-                            initLoadingScreen()
+                            initLoadingScreen(innerPadding)
                         }
                         is LatestNewsUiState.SuccessCategory -> {
 
